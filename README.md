@@ -1,23 +1,30 @@
 # Photo
 
-[Deployed App](http://photo.eoconnor.io)
+[Deployed App](http://photo.eoconnor.io) - I've deployed my app here so that you don't 
+have to waste hours trying to get phoenix to run on your machine. (Unless you'd like to in which
+case I have a list of prereqs and instructions on how to run the server afterwards)
+
+## Description
+Very basic app that queries [Unsplash](https://unsplash.com) for 25 random pictures
+and displays them with the username of the author. Refreshing the page will load 
+25 new photos. Clicking on the user's name will send you to their Unsplash page
 
 ## Technology Details
 This project was made using the Phoenix/elixir framework
-To run this project you will need a few dependencies:
+To run this project you will need a few prerequisites:
 
   * Erlang / OTP version 20.2
   * Elixir version 1.6
   * Phoenix version 1.3
   * NodeJS version 9.4
   * Standard C/C++ dev tools (e.g. the Ubuntu build-essential package)
-  (NOTE: I've included a binary that will allow you run the app as long as 
-  you have at least Erlang / OTP version 20.2 also I have deployed it to a 
-  VPS as well so there is no real need to run it yourselves)
   * I used an elixir library for doing the API call to Unspalsh found [here] (https://github.com/waynehoover/unsplash-elixir)
   (NOTE: The library was missing the option for specifying the number of
   photos you wanted back from the call so I had to add that in and currently 
   have an open pull-request to add that to the library)
+  * Assuming you have all the dependencies above you should be able to
+  run the application follow the steps in the `To start your Phoenix server`
+  section of this README
 
 ## Files of interest 
 In case you are unfamiliar with the Phoenix Framework here are some of the 
@@ -32,10 +39,11 @@ files that may be of interest to you.
       - The actual Phoenix application / the "main"
   * Most of the other files are template files that Phoenix needs to run the app
   * `assets/` is where all the React  and css would go
+  * `deps/` where all the project dependecies and libraries are stored
   * `lib/photo_web/router.ex` Decides where all the requests are sent to
 
 
-To start your Phoenix server:
+## To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Install Node.js dependencies with `cd assets && npm install`
