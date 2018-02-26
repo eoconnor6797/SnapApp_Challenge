@@ -18,7 +18,7 @@ To run this project you will need a few prerequisites:
   * Phoenix version 1.3
   * NodeJS version 9.4
   * Standard C/C++ dev tools (e.g. the Ubuntu build-essential package)
-  * I used an elixir library for doing the API call to Unspalsh found [here] (https://github.com/waynehoover/unsplash-elixir)
+  * I used an elixir library for doing the API call to Unspalsh found [here](https://github.com/waynehoover/unsplash-elixir)
   (NOTE: The library was missing the option for specifying the number of
   photos you wanted back from the call so I had to add that in and currently 
   have an open pull-request to add that to the library)
